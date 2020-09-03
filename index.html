@@ -1,0 +1,98 @@
+<body onload='document.survey-form.name-input.focus()'>
+<h1 id="title" align="center">freeCodeCamp Survey Form</h1>
+<p id="description" align="center">Thank you for taking the time to help us improve the platform</p>
+
+<div class="main-content">
+
+<form id="survey-form" action="#" name="validate">
+  
+	<div class="grid-container">
+   
+    <div class="grid-item" id="name-label">Name</div>
+		<div class="grid-item">
+      <input type="text" id="name" name="nameinput" size="40" width="300" placeholder="Enter your Name"/><br></div>
+    
+		<div class="grid-item" id="email-label">Email</div>
+    
+		<div class="grid-item">
+      <input type="email" id="email" name="emailinput" width="300" size="40" placeholder="you@yourdomain.com"/></div>
+		
+    
+		<div class="grid-item" id="number-label">Age</div>
+		<div class="grid-item">
+      <input type="number" id="numberinput" name="ageinput" placeholder="Enter your age" size="15" maxlength="2" min="10" max="99" /><br></div>
+
+    
+    
+<!--	DROPDOWN   -->
+		<div class="grid-item" id="rolelabel">What is your current role?</div>
+		<div class="grid-item" >
+      
+			<select name="role" id="dropdown">
+			  <option value="Select current role" selected></option>
+			  <option value="student">Student</option>
+			  <option value="fulltime-coder">Full-time Coder</option>
+			  <option value="parttime-coder">Part-time Coder</option>
+			  <option value="parttime-surfer">Part-time Surfer</option>
+			  <option value="retired">Retired</option>
+			  <option value="other">Other</option>
+			</select>
+		</div>
+		
+<!--	RADIO   -->
+		<div class="grid-item">Would you recommend freeCodeCamp to a friend?</div>
+		<div class="grid-item">
+			<fieldset class="border">		  
+				<input type="radio" id="definitely" name="recommend" value="Definitely" checked>
+				<label for="definitely">Definitely</label> <br>
+				<input type="radio" id="maybe" name="recommend" value="Maybe">
+				<label for="maybe">Maybe</label><br> 	
+				<input type="radio" id="notsure" name="recommend" value="Not Sure">
+				<label for="notsure">Not Sure</label> <br>
+			</fieldset>
+		</div>
+		
+<!--	DROPDOWN   -->	
+		<div class="grid-item">What is your favorite feature of freeCodeCamp?</div>
+		<div class="grid-item" id="feature">
+			<select name="feature" id="dropdown">
+				<option value="" selected></option>
+				<option value="challenges">Challanges</option>
+				<option value="projects">Projects</option>
+				<option value="community">Community</option>
+				<option value="open-src">Open Source</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+		
+<!--	CHECKBOXES   -->
+		<div class="grid-item">What would you like to see improved? (Check all that apply)</div>
+		<div class="grid-item">
+			<fieldset class="border">
+			  <label><input type="checkbox" name="improved" value="front-end-projects">Front-End Projects</label> <br>      
+			  <label><input type="checkbox" name="improved" value="back-end-projects">Back-End Projects</label> <br>      
+			  <label><input type="checkbox" name="improved" value="data-visualization">Data Visualization</label><br>
+			  <label><input type="checkbox" name="improved" value="challenges">Challenges</label>    <br>
+			  <label><input type="checkbox" name="improved" value="open-src">Open Source Community</label><br>   
+			  <label><input type="checkbox" name="improved" value="gitter">Gitter Help Rooms</label>  <br> 
+			  <label><input type="checkbox" name="improved" value="videos">Videos</label> <br>
+			  <label><input type="checkbox" name="improved" value="meetups">City Meetups</label> <br>     
+			  <label><input type="checkbox" name="improved" value="wiki">Wiki</label> <br>
+			  <label><input type="checkbox" name="improved" value="forum">Forum</label> <br>    
+			  <label><input type="checkbox" name="improved" value="courses">Addtional Courses</label><br> 
+			</fieldset>
+		</div>
+	 
+	 
+		<div class="grid-item">Any comments or suggestions?</div>		
+		<div class="grid-item">	
+          <textarea placeholder="Enter your comments here..." cols="30" rows="7" name="comments"></textarea><br>
+		  
+		</div>
+	    
+    <button type="submit" name="submit" value="Submit" id="submit">Submit</button>    
+         
+		</div>
+		</form>
+  	
+</div>
